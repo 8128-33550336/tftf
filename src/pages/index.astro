@@ -1,0 +1,105 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+	<main>
+		<h1>*tf</h1>
+		<p>tfで終わるもののリスト</p>
+
+		<dl>
+			<dt>bttf</dt>
+			<dd>
+				映画<dfn>Back to the Future</dfn>のこと。
+			</dd>
+			<dt>CTF</dt>
+			<dd>
+				<dfn>Capture The Flag</dfn>。
+				Flagを獲得するハッキングコンテスト。
+			</dd>
+			<dt>ITF.</dt>
+			<dd>
+				筑波大学のブランドスローガン <dfn>Imagine The Feature.</dfn
+				>のこと。また、筑波大学のこと。
+			</dd>
+			<dt>OTF</dt>
+			<dd>
+				<dfn>OpenType Font</dfn>のこと。
+			</dd>
+			<dt>RTF</dt>
+			<dd>
+				<dfn>Rich Text Format</dfn>のこと。
+			</dd>
+			<dt>TF</dt>
+			<dd>
+				<dfn>TensorFlow</dfn>のこと。機械学習ライブラリ。
+			</dd>
+			<dt>TTF</dt>
+			<dd>
+				<dfn>TrueType Font</dfn>のこと。
+			</dd>
+			<dt>UTF</dt>
+			<dd>
+				<dfn>Unicode Transformation Format</dfn> または <dfn
+					>UCS Transformation Format</dfn
+				>のこと。Unicodeの符号化方式。UTF-8 や UTF-16,
+				UTF-32などがある。
+			</dd>
+			<dt>wtf</dt>
+			<dd>
+				<dfn>what the <span class="f-word">fuck</span></dfn>のこと。
+			</dd>
+		</dl>
+	</main>
+	<footer>
+		<span>
+			Issue, PRを歓迎します。
+			<a href="https://github.com/8128-33550336/tftf"
+				>GitHub: 8128-33550336/tftf</a
+			>
+		</span>
+	</footer>
+</Layout>
+
+<style>
+	main {
+		padding: 0 50px;
+	}
+	dfn {
+		font-style: normal;
+	}
+	dl dt {
+		font-size: larger;
+	}
+	footer {
+		margin-top: 100px;
+		border-top: solid 1px #888;
+		padding: 20px 50px;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		html {
+			background: #333;
+			color: #fff;
+		}
+		.f-word {
+			background-color: #fff;
+		}
+		.f-word:hover {
+			background-color: #fff0;
+		}
+	}
+
+	@media (prefers-color-scheme: light) {
+		html {
+			background: white;
+			color: #555;
+		}
+		.f-word {
+			background-color: #555;
+		}
+		.f-word:hover {
+			background-color: #5550;
+		}
+	}
+</style>
