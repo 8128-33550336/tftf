@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/footer.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -55,14 +56,7 @@ import Layout from "../layouts/Layout.astro";
 			</dd>
 		</dl>
 	</main>
-	<footer>
-		<span>
-			Issue, PRを歓迎します。
-			<a href="https://github.com/8128-33550336/tftf"
-				>GitHub: 8128-33550336/tftf</a
-			>
-		</span>
-	</footer>
+	<Footer />
 </Layout>
 
 <style>
@@ -75,17 +69,8 @@ import Layout from "../layouts/Layout.astro";
 	dl dt {
 		font-size: larger;
 	}
-	footer {
-		margin-top: 100px;
-		border-top: solid 1px #888;
-		padding: 20px 50px;
-	}
 
 	@media (prefers-color-scheme: dark) {
-		html {
-			background: #333;
-			color: #fff;
-		}
 		.f-word {
 			background-color: #fff;
 		}
@@ -95,10 +80,6 @@ import Layout from "../layouts/Layout.astro";
 	}
 
 	@media (prefers-color-scheme: light) {
-		html {
-			background: white;
-			color: #555;
-		}
 		.f-word {
 			background-color: #555;
 		}

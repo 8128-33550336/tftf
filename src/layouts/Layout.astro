@@ -57,7 +57,7 @@
     </body>
 </html>
 <style is:global>
-    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Emoji&display=swap");
     :root {
     }
     html {
@@ -67,5 +67,22 @@
     }
     body {
         margin: 0;
+    }
+    .emoji {
+        font-family: "Noto Emoji", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        html {
+            background: #333;
+            color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        html {
+            background: white;
+            color: #333;
+        }
     }
 </style>

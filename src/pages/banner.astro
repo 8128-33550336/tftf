@@ -1,0 +1,61 @@
+---
+import Footer from "../components/footer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <main>
+        <h1>バナー</h1>
+        <p>
+            もしよければ、あなたのサイトにバナーを設置してください。相互バナーもお待ちしております。
+        </p>
+        <div>
+            <a href="https://utf.wtf/" target="_blank" rel="noopener"
+                ><img
+                    src="https://utf.wtf/banner.png"
+                    alt="utf.wtf"
+                    width="500"
+                    height="100"
+                /></a
+            >
+            <pre><code data-banner-code>{`<a href="https://utf.wtf/" target="_blank" rel="noopener"><img src="https://utf.wtf/banner.png" alt="utf.wtf" width="500" height="100" /></a>`}</code></pre>
+            <div class="copy-button" data-copy-button>
+                <span>コードをコピー</span><span
+                    class="emoji"
+                    data-copy-button-emoji></span>
+            </div>
+        </div>
+    </main>
+    <Footer />
+</Layout>
+
+<style>
+    main {
+        padding: 0 50px;
+    }
+    .copy-button {
+        border-radius: 10px;
+        border: solid 1px #999;
+        cursor: pointer;
+        width: fit-content;
+        padding: 5px;
+    }
+</style>
+
+<script>
+    const copyButton = document.querySelector(
+        "[data-copy-button]",
+    ) as HTMLDivElement;
+    const bannerCode = document.querySelector(
+        "[data-banner-code]",
+    ) as HTMLElement;
+    const copyButtonEmoji = document.querySelector(
+        "[data-copy-button-emoji]",
+    ) as HTMLSpanElement;
+
+    copyButton.addEventListener("click", () => {
+        navigator.clipboard.writeText(bannerCode.textContent ?? "").then(() => {
+            copyButtonEmoji.textContent = "✅";
+        });
+    });
+</script>
