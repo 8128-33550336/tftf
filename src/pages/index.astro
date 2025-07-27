@@ -4,87 +4,121 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<main>
-		<h1>*tf</h1>
-		<p>tfで終わるもののリスト</p>
+    <main>
+        <h1>*tf</h1>
+        <p>tfで終わるもののリスト</p>
 
-		<dl>
-			<dt>bttf</dt>
-			<dd>
-				映画<dfn>Back to the Future</dfn>のこと。
-			</dd>
-			<dt>CTF</dt>
-			<dd>
-				<dfn>Capture The Flag</dfn>。
-				Flagを獲得するハッキングコンテスト。
-			</dd>
-			<dt>ITF.</dt>
-			<dd>
-				筑波大学のブランドスローガン <dfn>Imagine The Feature.</dfn
-				>のこと。また、筑波大学のこと。
-			</dd>
-			<dt>OTF</dt>
-			<dd>
-				<dfn>OpenType Font</dfn>のこと。
-			</dd>
-			<dt>RTF</dt>
-			<dd>
-				<dfn>Rich Text Format</dfn>のこと。
-			</dd>
-			<dt>TF</dt>
-			<dd>
-				<dfn>TensorFlow</dfn>のこと。機械学習ライブラリ。
-			</dd>
-			<dt>TTF</dt>
-			<dd>
-				<dfn>TrueType Font</dfn>のこと。
-			</dd>
-			<dt>UTF</dt>
-			<dd>
-				<dfn>Unicode Transformation Format</dfn> または <dfn
-					>UCS Transformation Format</dfn
-				>のこと。Unicodeの符号化方式。UTF-8 や UTF-16,
-				UTF-32などがある。
-			</dd>
-			<dt>wtf</dt>
-			<dd>
-				<dfn>what the <span class="f-word">fuck</span></dfn>のこと。
-			</dd>
-			<dd>
-				<dfn>Wobbly Transformation Format</dfn>のこと。
-				WTF-8ではUTF-16のペアになっていないサロゲートコードポイントをエンコードできる
-			</dd>
-		</dl>
-	</main>
-	<Footer />
+        <dl>
+            <dt>bttf</dt>
+            <dd>
+                映画<dfn>Back to the Future</dfn>のこと。
+            </dd>
+            <dt>CTF</dt>
+            <dd>
+                <dfn>Capture The Flag</dfn>。
+                Flagを獲得するハッキングコンテスト。
+            </dd>
+            <dt>DTF</dt>
+            <dd>
+                <dfn>Direct To Film</dfn>。
+                布などに図柄を印刷する技術の一つ。
+            </dd>
+            <dt>GTF</dt>
+            <dd>
+                <dfn>Gene Transfer Format</dfn> のこと。
+                遺伝子情報のファイル形式。
+                GFF (General Feature Format) と関連している。
+                GffRead や AGAT などのツールがある。
+            </dd>
+            <dt>ITF.</dt>
+            <dd>
+                筑波大学のブランドスローガン <dfn>Imagine The Feature.</dfn
+                >のこと。また、筑波大学のこと。
+            </dd>
+            <dt>ITF</dt>
+            <dd>
+                <dfn>Interleaved Two of Five</dfn> コードのこと。
+                集合包装用商品の物流などで使われるバーコード。
+                ダンボールなどでも見かけることがある。
+            </dd>
+            <dt>IETF</dt>
+            <dd>
+                インターネットの標準化を行う団体 <dfn>Internet Engineering Task Force</dfn> のこと。
+                RFCの策定などを行なっている。
+            </dd>
+            <dt>OTF</dt>
+            <dd>
+                <dfn>OpenType Font</dfn>のこと。
+            </dd>
+            <dt>RTF</dt>
+            <dd>
+                <dfn>Rich Text Format</dfn>のこと。
+            </dd>
+            <dt>TF</dt>
+            <dd>
+                <dfn>TensorFlow</dfn>のこと。機械学習ライブラリ。
+            </dd>
+            <dd>
+                <dfn>Terraform</dfn>のこと。IaC (Infrastructure as Code)ツール。
+                サーバやクラウドなどのインフラの設定をコードで管理することができる。
+            </dd>
+            <dd>
+                <dfn>Task Force</dfn>のこと。
+                特定の目的のために組織されたグループのこと。
+            </dd>
+            <dt>TTF</dt>
+            <dd>
+                <dfn>TrueType Font</dfn>のこと。
+            </dd>
+            <dt>UTF</dt>
+            <dd>
+                <dfn>Unicode Transformation Format</dfn> または <dfn
+                    >UCS Transformation Format</dfn
+                >のこと。Unicodeの符号化方式。UTF-8 や UTF-16,
+                UTF-32などがある。
+            </dd>
+            <dt>wtf</dt>
+            <dd>
+                <dfn>what the <span class="f-word">fuck</span></dfn>のこと。
+            </dd>
+            <dd>
+                <dfn>Wobbly Transformation Format</dfn>のこと。
+                WTF-8ではUTF-16のペアになっていないサロゲートコードポイントをエンコードできる
+            </dd>
+        </dl>
+    </main>
+    <Footer />
 </Layout>
 
 <style>
-	main {
-		padding: 0 50px;
-	}
-	dfn {
-		font-style: normal;
-	}
-	dl dt {
-		font-size: larger;
-	}
+    main {
+        padding: 0 50px;
+    }
+    dfn {
+        font-style: normal;
+    }
+    dl dt {
+        font-size: larger;
+    }
+    dd {
+        margin-bottom: 20px;
+    }
 
-	@media (prefers-color-scheme: dark) {
-		.f-word {
-			background-color: #fff;
-		}
-		.f-word:hover {
-			background-color: #fff0;
-		}
-	}
+    @media (prefers-color-scheme: dark) {
+        .f-word {
+            background-color: #fff;
+        }
+        .f-word:hover {
+            background-color: #fff0;
+        }
+    }
 
-	@media (prefers-color-scheme: light) {
-		.f-word {
-			background-color: #555;
-		}
-		.f-word:hover {
-			background-color: #5550;
-		}
-	}
+    @media (prefers-color-scheme: light) {
+        .f-word {
+            background-color: #555;
+        }
+        .f-word:hover {
+            background-color: #5550;
+        }
+    }
 </style>
